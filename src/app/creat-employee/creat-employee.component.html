@@ -1,0 +1,27 @@
+<h3 class="text-center my-4"> Create Employee </h3>
+
+<div class="col-md-6 offset-md-3">
+
+
+<form (ngSubmit) = "onSubmit()">
+
+    <div class="form-group">
+        <label> First name </label>
+        <input type="text" class="form-control" id="firstName"
+        [(ngModel)]="employee.firstName" name = "firstName" placeholder="Enter your first name" required autofocus>
+    </div>
+    <div class="form-group">
+        <label> Last name </label>
+        <input type="text" class="form-control" id="lastName"
+        [(ngModel)]="employee.lastName" name = "lastName" placeholder="Enter your last name" required>
+    </div>
+    <div class="form-group">
+        <label> Email Id </label>
+        <input type="text" class="form-control" id="emailId"
+        [(ngModel)]="employee.emailId" name = "emailId" placeholder="Enter your email id" required>
+    </div>
+    
+    <button class="btn btn-success my-4" type="submit"> ADD EMPLOYEE</button>
+
+</form>
+</div>
